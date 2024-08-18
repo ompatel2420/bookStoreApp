@@ -74,7 +74,7 @@ function Contactus() {
               <div>
               <label> Message </label> <br />
                   {/* md */}
-                  <textarea className="textarea textarea-md textarea-bordered" placeholder="Message"></textarea>
+                  <textarea className="textarea w-80 textarea-md textarea-bordered" placeholder="Message"></textarea>
               </div> 
               </div>  
               {/* Button */}
