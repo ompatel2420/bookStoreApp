@@ -46,60 +46,40 @@ function Contactus() {
             We're delighted to have you{" "}
             <span className="text-pink-500"> Here! :)</span>
           </h1>
-          <h1 className="md:text-4xl mt-16 pb-8">
+          <h1 className="md:text-4xl mt-8 pb-8">
             Contact{" "}
             <span className="text-pink-500"> Us! :)</span>
           </h1>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} method="POST">
               {/* if there is a button in form, it will close the modal */}
-              <div className="mt-4 space-y-2 flex justify-center"> 
-                <span>Name</span>
-                <br/>
-                <input
-                  type="text"
-                  placeholder="Enter your fullname"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
-                />
-                <br />
-                {errors.fullname && (
-                  <span className="text-sm text-red-500">
-                    This field is required
-                  </span>
-                )}
+              {/* xs */}
+              <div>
+              <div>
+                <label> Name </label> <br />
+                  {/* md */}
+                  <input
+                    type="text"
+                    placeholder="Type here"
+                    className="input input-bordered input-md w-full max-w-xs" />
               </div>
-              {/* Email */}
-              <div className="mt-4 space-y-2 flex justify-center">
-                <span>Email ID</span>
-                <br />
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
-                />
-                <br />
-                {errors.email && (
-                  <span className="text-sm text-red-500">
-                    This field is required
-                  </span>
-                )}
+              <div>
+              <label> E-mail ID </label> <br />
+                  {/* md */}
+                  <input
+                    type="text"
+                    placeholder="Type here"
+                    className="input input-bordered input-md w-full max-w-xs" />
               </div>
-              {/* Password */}
-              <div className="mt-4 space-y-2 flex justify-center">
-                <label>Message</label>
-                <br />
-                <input
-                  type="text"
-                  placeholder="Hi there, Here is the Book name that i need"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
-                />
-                <br />
-                {errors.password && (
-                  <span className="text-sm text-red-500">
-                    This field is required
-                  </span>
-                )}
-              </div>
+              <div>
+              <label> Message </label> <br />
+                  {/* md */}
+                  <input
+                    type="text"
+                    placeholder="Type here"
+                    className="input input-bordered input-md w-full max-w-xs" />   
+              </div> 
+              </div>  
               {/* Button */}
               <div className="flex justify-around mt-4">
                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">

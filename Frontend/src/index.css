@@ -3,6 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwindcss forms;
 
 body {
   font-family: "Poppins", sans-serif;
