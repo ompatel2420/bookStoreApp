@@ -54,7 +54,7 @@ function Contactus() {
         <form onSubmit={handleSubmit(onSubmit)} method="POST">
               {/* if there is a button in form, it will close the modal */}
               {/* xs */}
-              <div>
+              <div className="grid justify-center hw ">
               <div>
                 <label> Name </label> <br />
                   {/* md */}
@@ -74,10 +74,7 @@ function Contactus() {
               <div>
               <label> Message </label> <br />
                   {/* md */}
-                  <input
-                    type="text"
-                    placeholder="Type here"
-                    className="input input-bordered input-md w-full max-w-xs" />   
+                  <textarea className="textarea textarea-md textarea-bordered" placeholder="Message"></textarea>
               </div> 
               </div>  
               {/* Button */}
