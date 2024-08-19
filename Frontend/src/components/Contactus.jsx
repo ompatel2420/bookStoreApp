@@ -44,9 +44,10 @@ function Contactus() {
                             <input type="text" className="grow" placeholder="Email" />
                         </label>
                 </div>
-                <div className="p-2 ">
-                <textarea className="textarea w-80 textarea-bordered" placeholder="Message"></textarea>
+                <div className="p-2">
+                    <textarea className="textarea w-80 textarea-bordered" placeholder="Message"></textarea>
                 </div>
+                <button className="btn btn-wide ml-10 btn-active text-white text-l btn-secondary">Submit</button>
             </div>  
         </div>
 );
