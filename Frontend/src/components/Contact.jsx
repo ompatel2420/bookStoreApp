@@ -9,26 +9,25 @@ function Contactus() {
   const navigate = useNavigate();
   const from = location.state?.from?.pathname || "/";
   const {
-    register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
   const onSubmit = async (data) => {
-    const userInfo = {
-      fullname: data.fullname,
+    const inquiryInfo = {
+      name: data.name,
       email: data.email,
-      password: data.password,
+      message: data.message,
     };
     await axios
-      .post("http://localhost:4001/user/signup", userInfo)
+      .post("http://localhost:4001/user/contactus", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success("Signup Successfully");
+          toast.success("form submmitted");
           navigate(from, { replace: true });
         }
-        localStorage.setItem("Users", JSON.stringify(res.data.user));
+        localStorage.setItem("Inquiries", JSON.stringify(res.data.inquiry));
       })
       .catch((err) => {
         if (err.response) {
